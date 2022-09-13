@@ -1,0 +1,35 @@
+
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
+@import "./utils/extensions";
+
+@import "./themes/template";
+
+@import "./base/normalize";
+@import "./base/base";
+@import "./base/typography";
+// @import "./vendors/";
+
+@import "./components/spinner/circle";
+@import "./components/buttons";
+@import "./components/buttons/primary";
+@import "./components/buttons/like";
+@import "./components/lists";
+@import "./components/cards";
+@import "./components/form/location";
+@import "./components/intro/presentation";
+@import "./components/lists/stages";
+@import "./components/listings/restaurants";
+@import "./components/banner";
+@import "./components/lists/dishs";
+@import "./components/lists/meals";
+
+@import "./layouts/headers";
+@import "./layouts/navs";
+@import "./layouts/mains";
+@import "./layouts/footers";
+
+@import "./pages/all";
+@import "./pages/home";
+@import "./pages/menus";

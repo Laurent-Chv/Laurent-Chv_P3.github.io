@@ -1,0 +1,917 @@
+@charset "UTF-8";
+/**/ /**/ /**/ /**/ /**/ /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  /*    line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/**
+* TOUS LES ELEMENTS QUE JE NORMALISE A MA SAUCE   :)
+*/
+ul {
+  list-style: none;
+}
+
+/**/
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/*Fonts selon charte graphique*/
+/* Font "Shrikhand" */
+/* Font "Roboto" */
+/*Loading spinner de forme cerculaire avec changement de couleurs selon charte graphique*/
+.spinner__wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  background: #fff;
+  animation: slide 3s 1 forwards;
+}
+@keyframes slide {
+  from {
+    opacity: 1;
+    z-index: 100;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+.spinner__wrapper::before {
+  content: "";
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.spinner__wrapperLoading {
+  background-color: #99E2D0;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  border: 8px solid #9356DC;
+  border-radius: 50%;
+  border-top-color: #FF79DA;
+  animation: spin 1s ease-out infinite;
+  -webkit-animation: spin 1s ease-out infinite;
+  transition: all 0.7s;
+}
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    background: #9356DC;
+  }
+  50% {
+    transform: rotate(180deg);
+    background: #FF79DA;
+  }
+  100% {
+    transform: rotate(360deg);
+    background: #9356DC;
+  }
+}
+
+/**/ /*Bouton principal avec dégradé de couleur et ombre portée*/
+/*Un hover change la couleur du dégradé (plus clair ici) et ombre portée plus marquée*/
+.btn__primary {
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  color: #fff;
+  border-radius: 70px;
+  box-shadow: 0px 3px 10px rgb(184, 182, 182);
+}
+.btn__primary:hover {
+  box-shadow: 0px 5px 12px rgb(128, 126, 126);
+  transition: all 0.5s;
+  background: linear-gradient(to bottom right, #FF79DA, #FF79DA, #9356DC);
+}
+
+/*Bouton like en forme de coeur qui se remplis progressivement avec dégradé de couleur selon charte graphique*/
+.like {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  margin-right: 15px;
+}
+.like__primary {
+  font-size: 1.5em;
+  margin: 0;
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+.like__primary:hover .like__secondary {
+  clip: rect(0px, 24px, 24px, 0px);
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.like__primary > i.like__secondary {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding-right: 15px;
+  clip: rect(24px, 24px, 24px, 0px);
+  transition: clip 1s;
+}
+
+/*Partie localisation des restaurants*/
+/*Devra être éditable afin de trouver des restaurants proches d’un certain lieu*/
+.location {
+  background-color: rgb(228, 228, 228);
+  border-top: 1px solid #ddd;
+  box-shadow: 0 2px 5px #999 inset;
+}
+.location__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.location__wrapperDot {
+  position: absolute;
+  width: calc(50% - 75px);
+  display: flex;
+  justify-content: flex-end;
+}
+.location__wrapperDot > i {
+  font-size: 1em;
+  color: rgb(69, 69, 69);
+}
+.location__wrapperTxt {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+.location__wrapperTxt > p {
+  font-size: 1em;
+  font-weight: bold;
+  color: rgb(69, 69, 69);
+}
+
+/*Courte présentation de l’entreprise*/
+.presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(245, 245, 245);
+}
+.presentation__title {
+  margin: 50px 50px 10px 50px;
+  font-size: 1.5em;
+}
+.presentation__txt {
+  margin: 10px 30px 35px 30px;
+  font-size: 1.2em;
+  color: rgb(69, 69, 69);
+}
+.presentation__btn {
+  margin-bottom: 60px;
+  padding: 15px 25px;
+}
+
+.stages {
+  margin: auto;
+  padding: 50px 0;
+}
+@media screen and (min-width: 992px) {
+  .stages {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.stages__title {
+  font-size: 1.5em;
+  width: 90%;
+  margin: 0 auto 30px;
+}
+.stages__item {
+  width: 90%;
+  margin: 0 auto 25px;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 992px) {
+  .stages__item {
+    width: 28%;
+    margin: 10px auto 25px;
+    padding-left: 2vw;
+    justify-content: flex-start;
+  }
+}
+.stages__itemNb {
+  position: absolute;
+}
+.stages__itemNb > p.stage-nb {
+  position: relative;
+  top: 5px;
+  right: 175px;
+  background-color: #9356DC;
+  color: #fff;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  line-height: 1.7em;
+}
+@media screen and (min-width: 992px) {
+  .stages__itemNb > p.stage-nb {
+    right: 50%;
+  }
+}
+.stages__itemBtn {
+  width: 350px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(245, 245, 245);
+  border-radius: 20px;
+  box-shadow: 0px 3px 10px rgb(204, 203, 203);
+  transition: all 0.7s;
+}
+.stages__itemBtn:hover {
+  background-color: #f2eafb;
+}
+.stages__itemBtn:hover > i {
+  color: #9356DC;
+}
+.stages__itemBtn > i {
+  color: rgb(109, 106, 106);
+  font-size: 1.2em;
+  width: 40px;
+  margin-left: 35px;
+}
+.stages__itemBtn p.stage-txt {
+  font-weight: bold;
+}
+
+/*Cards clicable pour les restaurants qui renvoi vers le menu dudit restaurant*/
+.restaurants {
+  background-color: rgb(245, 245, 245);
+  margin: auto;
+  padding: 50px 0;
+}
+.restaurants__title {
+  font-size: 1.7em;
+  width: 90%;
+  margin: 0 auto 30px;
+}
+.restaurants__wrapper {
+  width: 90%;
+  margin: auto;
+}
+@media screen and (min-width: 768px) {
+  .restaurants__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.restaurants__wrapper > div {
+  background-color: #fff;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0px 3px 10px rgb(204, 203, 203);
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 768px) {
+  .restaurants__wrapper > div {
+    width: 45%;
+    margin: 0 auto 50px;
+  }
+}
+.restaurants__card {
+  width: 100%;
+}
+.restaurants__cardImgWrapper {
+  position: relative;
+}
+.restaurants__cardImgWrapper > div.img-restaurant {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+  border-radius: 15px 15px 0 0;
+}
+@media screen and (min-width: 992px) {
+  .restaurants__cardImgWrapper > div.img-restaurant {
+    height: 250px;
+  }
+}
+.restaurants__cardImgWrapper > div.img-restaurant > img {
+  width: 101%;
+  height: 101%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+.restaurants__cardImgWrapper > div.img-content > p.new-restaurant {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  font-size: 0.9em;
+  font-weight: bold;
+  background-color: #99E2D0;
+  color: #278870;
+  padding: 7px 12px;
+  border-radius: 3px;
+}
+.restaurants__cardBody {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+}
+.restaurants__cardBody > div.restaurant-txt > h4 {
+  margin: 5px 0;
+}
+.restaurants__cardBody > div.restaurant-txt > p {
+  margin: 5px 0;
+}
+.restaurants__cardBody > div.restaurant-heart {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*Bannière de présentation avec image*/
+.banner {
+  position: relative;
+}
+.banner__img {
+  width: 100%;
+  height: auto;
+  max-height: 450px;
+  position: relative;
+  object-fit: cover;
+}
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .banner__img {
+    max-height: 370px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .banner__img {
+    max-height: 320px;
+  }
+}
+.banner__wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30px 0 0;
+  background-color: rgb(245, 245, 245);
+  border-radius: 40px 40px 0 0;
+}
+.banner__wrapperTitle {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 5px auto;
+}
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .banner__wrapperTitle {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .banner__wrapperTitle {
+    width: 70%;
+    max-width: 850px;
+  }
+}
+.banner__wrapperTitle > h2 {
+  font-family: "Shrikhand", "cursive";
+  font-size: 1.6em;
+  margin: 0;
+}
+
+/*Partie menu avec effet d'appararition progressive avec un léger décalage dans le temps (par groupe)*/
+.dishs {
+  margin: auto;
+  padding-top: 10px;
+  background-color: rgb(245, 245, 245);
+  /*Style spécifique au bouton "Commander" */
+}
+.dishs__part {
+  width: 90%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .dishs__part {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .dishs__part {
+    width: 70%;
+    max-width: 850px;
+  }
+}
+.dishs__part:nth-child(1) {
+  animation: fadein 2s;
+}
+.dishs__part:nth-child(2) {
+  animation: fadein 4s;
+}
+.dishs__part:nth-child(3) {
+  animation: fadein 6s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.dishs__partName {
+  font-size: 1em;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 20px 0 7px;
+}
+.dishs__partUnderline {
+  background-color: #99E2D0;
+  width: 45px;
+  height: 4px;
+  margin-bottom: 15px;
+}
+.dishs__partList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.dishs .order {
+  display: flex;
+}
+.dishs .order__btn {
+  margin: 50px auto 80px;
+  padding: 15px 50px;
+}
+
+/*Partie plats avec un effet simulé de validation*/
+/*La validation apparaît en coulissant de la droite vers la gauche avec une rotation.
+L'effet se déclanche au survol*/
+.meals {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 3px 10px rgb(204, 203, 203);
+}
+.meals__body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.meals__body:hover .meals__bodyDetails--check {
+  width: 60px !important;
+}
+.meals__body:hover .meals__bodyDetails--check i {
+  transform: rotate(360deg);
+}
+.meals__bodyTxt {
+  display: flex;
+  flex-direction: column;
+  margin: 12px 10px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.meals__bodyTxt--title {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 1.1em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.meals__bodyTxt--components {
+  margin: 0;
+  font-size: 0.9em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.meals__bodyDetails {
+  display: flex;
+}
+.meals__bodyDetails--price {
+  height: 100%;
+  display: flex;
+}
+.meals__bodyDetails--price > p.price {
+  margin: 12px 10px;
+  font-size: 0.9em;
+  font-weight: bold;
+  align-self: flex-end;
+}
+.meals__bodyDetails--check {
+  height: 100%;
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  width: 0;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.meals__bodyDetails--check > i {
+  color: #fff;
+  font-size: 1.2em;
+  margin: auto;
+  align-self: center;
+  transition: all 0.5s;
+}
+
+/*Header commun à toutes les pages*/
+.header {
+  margin-top: 15px;
+  /*** Partie pour le header de la page menu avec l'item de flèche retour ***/
+}
+.header__home {
+  display: flex;
+  justify-content: center;
+}
+.header__title {
+  margin: 5px 0;
+}
+.header__title > img {
+  width: 150px;
+}
+.header__return {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.header__returnBtn {
+  position: absolute;
+  left: 20px;
+  bottom: 15px;
+}
+.header__returnBtn > a > i {
+  font-size: 1.4em;
+}
+
+/*Footer commun à toutes les pages*/
+footer {
+  background-color: rgb(53, 53, 53);
+  color: #fff;
+  padding: 30px 0 15px;
+}
+footer > h5 {
+  font-family: "Shrikhand", "cursive";
+  font-size: 1.3rem;
+  margin: 0;
+  padding-left: 30px;
+}
+footer > div {
+  margin: 25px 30px;
+  padding: 0;
+}
+footer > div > ul > li {
+  list-style-type: none;
+  margin: 10px 0;
+}
+footer > div > ul > li > a {
+  color: #fff;
+}
+footer > div > ul > li > a > i.fa-solid {
+  color: #fff;
+  width: 30px;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+/*# sourceMappingURL=index.css.map */

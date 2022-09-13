@@ -1,0 +1,97 @@
+/*Cards clicable pour les restaurants qui renvoi vers le menu dudit restaurant*/
+
+.restaurants{
+   background-color: $grey-color;
+   margin: auto;
+   padding: 50px 0;
+
+   &__title {
+      font-size: 1.7em;
+      width: 90%;
+      margin: 0 auto 30px;
+      
+   }
+
+   &__wrapper {
+      width: 90%;
+      margin: auto;
+      @include tablette-and-desktop{
+         display: flex;
+         flex-wrap: wrap;
+       }
+ 
+      >div {
+        background-color: #fff;
+        display: flex;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 0px 3px 10px rgb(204, 203, 203);
+        margin-bottom: 25px;
+        @include tablette-and-desktop{
+         width: 45%;
+         margin: 0 auto 50px;
+       }
+      }
+    }
+
+   &__card {
+      width: 100%;
+
+      &ImgWrapper {
+         position: relative;
+
+       >div.img-restaurant {
+         position: relative;
+         overflow: hidden;
+         height: 200px;
+         border-radius: 15px 15px 0 0;
+         @include desktop-only{
+            height: 250px;
+          }
+
+         >img {
+           width: 101%;
+           height: 101%;
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+           object-fit: cover;
+         }
+       }
+
+       >div.img-content {
+         >p.new-restaurant {
+            position: absolute;
+            top: 0;
+            right: 15px;
+            font-size: 0.9em;
+            font-weight: bold;
+            background-color: $color-tertiary;
+            color: darken($color-tertiary, 40%);
+            padding: 7px 12px;
+            border-radius: 3px;
+         }
+       }
+      }
+
+      &Body {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         margin: 10px;
+
+       >div.restaurant-txt {
+         >h4{margin: 5px 0;}
+         >p{margin: 5px 0;}
+       }
+
+       >div.restaurant-heart {
+          display: flex;
+          margin-top: 10px;
+          margin-bottom: 10px;
+       }
+      }
+   }
+}
